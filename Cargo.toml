@@ -1,0 +1,22 @@
+[package]
+name = "nix-remote"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.68"
+clap = { version = "4.0.29", features = ["derive"] }
+exec = "0.3.1"
+memmap = "0.7.0"
+openssh = { version = "0.9.8", features = ["native-mux"] }
+openssh-sftp-client = "0.12.2"
+regex = "1.7.0"
+serde = { version = "1.0.151", features = ["derive"] }
+serde_json = "1.0.91"
+tokio = { version = "1.23.0", features = ["macros", "rt", "fs"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+uuid = { version = "1.2.2", features = ["v4"] }
+walkdir = "2.3.2"
